@@ -15,11 +15,15 @@ const Hero = () => {
       style={{
         backgroundColor: theme.background,
         color: theme.text,
+        
       }}>
       <p className='uppercase text-2xl sm:text-4xl' style={{ marginBottom: 30 }}>Welcome to our Wedding</p>
       <Image src={hero} alt='couple' className='object-cover rounded-full' style={{marginBottom: 20, width: '300px', height: '300px'}} />
-      <p className="text-6xl sm:text-8xl font-vibes text-center" style={{ marginBottom: 20 }}>Akhil and Chandana</p>
-
+      <div className='flex' style={{marginBottom: 20}}>
+      <p className="text-6xl sm:text-8xl font-vibes text-center" >Akhil</p>
+      <p className="text-6xl sm:text-8xl font-vibes text-center" style={{ margin: "0px 30px" }}>& </p>
+      <p className="text-6xl sm:text-8xl font-vibes text-center" >Chandana</p>
+      </div>
       <div  style={{marginBottom: 10}}>
         <Countdown
           date={weddingDate}
@@ -48,7 +52,7 @@ const Hero = () => {
           )}
         />
       </div>
-      <div className='text-3xl rounded flex items-center gap-2' style={{ backgroundColor: theme.secondary, color: theme.color, padding: "20px 40px", marginTop: 20 }}>
+      <div className='text-3xl rounded flex items-center gap-2 cursor-pointer' style={{ backgroundColor: theme.secondary, color: theme.color, padding: "20px 40px", marginTop: 20 }}>
       <Mail className="w-8 h-8  group-hover:scale-110 transition-transform duration-300" style={{ color: theme.color }} />
         View Invitation
       </div>
