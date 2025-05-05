@@ -6,21 +6,21 @@ export default function ThemeToggle() {
   const { isDark, toggleTheme, theme } = useTheme();
 
   return (
-    <button
-      onClick={toggleTheme}
-      style={{
-        marginTop: "1rem",
-        padding: "1rem 1rem",
-        background: theme.secondary,
-        color: theme.color,
-        borderRadius: "1rem",
-        display: "flex",
-        alignItems: "center",
-        gap: "0.5rem",
-      }}
-      className="cursor-pointer"
-    >
-      {isDark ? <Sun size={20} /> : <Moon size={20} />}
-    </button>
+    <div className="fixed bottom-5 right-5 z-50">
+      <button
+        onClick={toggleTheme}
+        style={{
+          padding: "8px",
+          background: theme.secondary,
+          color: theme.color,
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+        }}
+        className="cursor-pointer rounded-full"
+      >
+        {isDark ? <Sun size={16} /> : <Moon size={16} />}
+      </button>
+    </div>
   );
 }

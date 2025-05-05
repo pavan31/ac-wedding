@@ -6,7 +6,15 @@ export default function Home() {
   const { theme } = useTheme();
 
   return (
-    <main style={{ backgroundColor: theme.background, color: theme.text, boxSizing: "border-box" }}>
+    <main
+      style={{
+        backgroundColor: theme.background,
+        color: theme.text,
+        height: "100vh",
+        padding: "20px",
+        boxSizing: "border-box",
+      }}
+    >
       <Hero />
     </main>
   );

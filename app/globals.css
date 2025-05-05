@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap');
 
+
 .font-vibes {
   font-family: 'Great Vibes', cursive;
 }
