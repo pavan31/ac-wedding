@@ -19,7 +19,7 @@ export default function ThemeToggle() {
         }}
         className="cursor-pointer rounded-full"
       >
-        {isDark ? <Sun size={16} /> : <Moon size={16} />}
+        {isDark ? <Sun size={20} /> : <Moon size={20} />}
       </button>
     </div>
   );

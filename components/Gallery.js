@@ -1,24 +1,24 @@
 import React from "react";
+import Carousel from "./Carousel";
+
 
 const Gallery = () => {
   return (
-    <section className="" style={{ marginBottom: "100px" }}>
+    <section className=" flex flex-col items-center" style={{ marginBottom: "100px" }}>
       <p
-        className="text-3xl sm:text-4xl font-vibes text-center "
-        style={{ marginBottom: "50px" }}
+        className="text-8xl sm:text-8xl font-vibes text-center"
+        style={{ marginBottom: "100px" }}
       >
         Gallery
       </p>
       <div
+      className="w-full sm:w-[50%]"
         style={{
-          // width: "650px",
-          height: "60vh",
-          border: "1px solid white",
-          borderRadius: "8px",
-          padding: "10px",
           boxSizing: "border-box",
         }}
-      ></div>
+      >
+        <Carousel />
+      </div>
     </section>
   );
 };
