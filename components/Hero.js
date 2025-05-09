@@ -46,9 +46,9 @@ const Hero = () => {
       </div>
 
       <Link
-        className="text-3xl rounded-full flex items-center gap-2 cursor-pointer"
+        className="text-3xl rounded-xl flex items-center gap-2 backdrop-blur-sm cursor-pointer"
         style={{
-          backgroundColor: theme.primary,
+          backgroundColor: theme.secondary,
           color: theme.color,
           padding: "16px 32px",
         }}
@@ -60,41 +60,6 @@ const Hero = () => {
         />
         View Invitation
       </Link>
-      {/* <div style={{ marginBottom: 10 }} className="absolute bottom-5 right-5">
-        <Countdown
-          date={weddingDate}
-          renderer={({ days, hours, minutes, seconds }) => (
-            <div className="flex justify-center gap-3 sm:gap-3">
-              {[
-                { label: "Days", value: days },
-                { label: "Hrs", value: hours },
-                { label: "Min", value: minutes },
-                { label: "Sec", value: seconds },
-              ].map((item, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <span
-                    className="text-base sm:text-lg "
-                    style={{ color: theme.color, marginTop: 10 }}
-                  >
-                    {item.label}
-                  </span>
-                  <div
-                    className="flex items-center justify-center w-12 h-12 sm:w-12 sm:h-12 rounded-xl shadow-lg"
-                    style={{
-                      backgroundColor: theme.primary,
-                      color: theme.color,
-                    }}
-                  >
-                    <span className="text-lg sm:text-lg font-bold">
-                      {item.value}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        />
-      </div> */}
       <ThemeToggle />
     </div>
   );

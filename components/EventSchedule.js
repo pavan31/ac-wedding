@@ -9,33 +9,33 @@ const events = [
   {
     icon: "🪔",
     name: "Haldi Ceremony",
-    date: "June 8, 2025",
-    time: "10:00 AM",
-    location: "Bride's Residence",
-    dressCode: "Yellow Traditional",
+    date: "15 May 2025",
+    time: "1:00 PM",
+    location: "Vasavi Kalyana mandapam, Narasaraopet",
+    dressCode: "Yellow & White",
   },
   {
     icon: "🎶",
     name: "Sangeet",
-    date: "June 8, 2025",
-    time: "7:30 PM",
-    location: "Banquet Hall, The Grand Palace",
+    date: "15 May 2025",
+    time: "7:00 PM",
+    location: "Vasavi Kalyana mandapam, Narasaraopet",
     dressCode: "Ethnic with a Sparkle",
   },
   {
     icon: "💍",
     name: "Wedding",
-    date: "June 9, 2025",
-    time: "6:00 PM",
-    location: "The Grand Palace",
+    date: "17th May 2025",
+    time: "9:00 PM",
+    location: "Groom's Home",
     dressCode: "Traditional",
   },
   {
     icon: "🎉",
     name: "Reception",
-    date: "June 10, 2025",
-    time: "7:30 PM",
-    location: "Hotel Sea View",
+    date: "17th May 2025",
+    time: "6:30 PM",
+    location: "Komala Conventions A/C, Narasaraopet",
     dressCode: "Formal/Western",
   },
 ];
@@ -101,13 +101,16 @@ export default function EventSchedule() {
 
               {/* Detailed content */}
               <div
-                className={`absolute inset-0 p-6 flex flex-col justify-center items-center bg-black/70 backdrop-blur-sm text-white text-center transition-opacity duration-300 ${
+                className={`absolute inset-0 box-border flex flex-col justify-center items-center bg-black/70 backdrop-blur-sm text-white text-center transition-opacity duration-300 ${
                   isMobile
                     ? isOpen
                       ? "opacity-100"
                       : "opacity-0"
                     : "opacity-0 group-hover:opacity-100"
                 }`}
+                style={{
+                  padding: "20px",
+                }}
               >
                 <p
                   className="text-4xl font-vibes"
@@ -122,9 +125,16 @@ export default function EventSchedule() {
                   {event.date} • {event.time}
                 </p>
                 <p className="flex items-center justify-center text-xl sm:text-2xl mb-2">
-                  {/* <MapPin className="w-5 h-5 mr-2" /> */}
                   {event.location}
                 </p>
+                {event.dressCode && (
+                  <p
+                    className="text-xl sm:text-2xl"
+                    style={{ marginTop: "10px" }}
+                  >
+                    Dress Code: {event.dressCode}
+                  </p>
+                )}
               </div>
             </motion.div>
           );

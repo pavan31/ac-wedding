@@ -21,7 +21,7 @@ export default function WatchLiveButton() {
           border: `2px solid ${theme.primary}`,
           borderRadius: "10px",
           padding: "10px 20px",
-          color: theme.primary,
+          color: theme.text,
         }}
         onClick={() => {
           window.open("https://yourlivestreamlink.com", "_blank");

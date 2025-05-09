@@ -17,18 +17,19 @@ export default function ContactInfo() {
       >
         <p style={{ marginBottom: "20px" }}>
           👰 Bride&apos;s Side:
-          <span className="font-medium">+91 98765 43210</span>
+          <span className="font-medium">+91 9951737271</span>
         </p>
         <p style={{ marginBottom: "20px" }}>
           🤵 Groom&apos;s Side:
-          <span className="font-medium">+91 91234 56789</span>
+          <span className="font-medium">+91 8074897590</span>
         </p>
         <p style={{ marginBottom: "20px" }}>
           📍 Location Help:
           <a
-            href="https://maps.google.com"
+            href="https://maps.app.goo.gl/n7TYXM2gYoxYiqMu5"
             target="_blank"
             className="underline text-blue-300"
+            style={{ paddingLeft: "5px", textDecoration: "underline" }}
           >
             Open Google Maps
           </a>
