@@ -57,31 +57,33 @@ export default function InvitationSection() {
         <p className="text-2xl " style={{ marginBottom: "20px" }}>
           Time to the Big Day!
         </p>
-        <div
-          className="flex box-border w-11/12 sm:w-full h-[100px] items-center justify-center text-2xl rounded-2xl"
-          style={{
-            // border: "5px solid",
-            margin: "10px",
-            backgroundColor: theme.primary,
-            // color: theme.primary,
-            color: theme.text,
-          }}
-        >
-          {Object.entries(timeLeft).map(([unit, value]) => (
-            <div
-              key={unit}
-              className="flex flex-col items-center min-w-[100px]"
-            >
-              <span>{value}</span>
-              <span
-                className="text-sm uppercase mt-1 tracking-widest"
-                style={{ marginTop: "5px" }}
+        {timeLeft.days > 0 && timeLeft.hrs > 0 && timeLeft.mins > 0 && (
+          <div
+            className="flex box-border w-11/12 sm:w-full h-[100px] items-center justify-center text-2xl rounded-2xl"
+            style={{
+              // border: "5px solid",
+              margin: "10px",
+              backgroundColor: theme.primary,
+              // color: theme.primary,
+              color: theme.text,
+            }}
+          >
+            {Object.entries(timeLeft).map(([unit, value]) => (
+              <div
+                key={unit}
+                className="flex flex-col items-center min-w-[100px]"
               >
-                {unit}
-              </span>
-            </div>
-          ))}
-        </div>
+                <span>{value}</span>
+                <span
+                  className="text-sm uppercase mt-1 tracking-widest"
+                  style={{ marginTop: "5px" }}
+                >
+                  {unit}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Scroll Icon */}
