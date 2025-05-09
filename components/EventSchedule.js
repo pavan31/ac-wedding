@@ -98,7 +98,7 @@ export default function EventSchedule() {
             <motion.div
               key={index}
               onClick={() => toggleOpen(index)}
-              className="relative group rounded-2xl min-h-[340px] w-full overflow-hidden shadow-xl transition-all duration-300 cursor-pointer"
+              className="relative group rounded-2xl min-h-[360px] w-full overflow-hidden shadow-xl transition-all duration-300 cursor-pointer"
               style={{ backgroundColor: theme.primary }}
               whileHover={!isMobile ? { scale: 1.05 } : {}}
             >
@@ -143,9 +143,9 @@ export default function EventSchedule() {
                   event.subEvents.map((subEvent, subIdx) => (
                     <div key={subIdx} className="w-full border-t border-white/30 py-2">
                       <p className="text-2xl font-lora font-semibold mb-1">{subEvent.for}</p>
-                      <p className="text-xl font-lora sm:text-2xl">{subEvent.date} • {subEvent.time}</p>
-                      <p className="text-xl font-lora sm:text-2xl">{subEvent.location}</p>
-                      <p className="text-xl font-lora sm:text-2xl " style={{ marginBottom: "10px" }}>
+                      <p className="text-xl font-lora sm:text-xl">{subEvent.date} • {subEvent.time}</p>
+                      <p className="text-xl font-lora sm:text-xl">{subEvent.location}</p>
+                      <p className="text-xl font-lora sm:text-xl " style={{ marginBottom: "10px" }}>
                         Dress Code: {subEvent.dressCode}
                       </p>
                       {
