@@ -15,7 +15,7 @@ export default function InvitationSection() {
   const { theme } = useTheme();
 
   useEffect(() => {
-    const weddingDate = new Date("2025-05-17T21:00:00");
+    const weddingDate = new Date("2025-05-17T18:30:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -39,7 +39,7 @@ export default function InvitationSection() {
 
   return (
     <section
-      className="relative text-center flex flex-col items-center justify-center min-h-[95vh] box-border"
+      className="relative text-center  flex flex-col items-center justify-center min-h-[95vh] box-border"
       style={{ padding: "20px" }}
     >
       {/* Invitation Message */}
@@ -50,20 +50,20 @@ export default function InvitationSection() {
         You&apos;re Invited!
       </p> */}
       <p
-        className="text-3xl w-9/10 sm:max-w-2xl mx-auto text-muted-foreground"
+        className="text-3xl w-9/10 sm:max-w-2xl mx-auto font-lora text-muted-foreground"
         style={{ marginBottom: "25px" }}
       >
         Your Blessings Means a Lot
       </p>
       <p
-        className="text-xl w-9/10 sm:max-w-2xl mx-auto text-muted-foreground"
+        className="text-xl w-9/10 sm:max-w-2xl mx-auto font-lora text-muted-foreground"
         style={{ marginBottom: "25px" }}
       >
         We would be delighted to have you join us in celebrating this happy
         event as we announce our wedding.
       </p>
       <p
-        className="text-xl w-9/10 sm:max-w-2xl mx-auto text-muted-foreground"
+        className="text-xl w-9/10 sm:max-w-2xl mx-auto font-lora text-muted-foreground"
         style={{ marginBottom: "25px" }}
       >
         We invite you to join us as we exchange vows and  happy to take
@@ -85,11 +85,11 @@ export default function InvitationSection() {
 
       {/* Countdown Timer */}
       <div className="box-border flex flex-col items-center justify-center">
-        <p className="text-2xl " style={{ marginBottom: "20px" }}>
+        <p className="text-2xl font-lora" style={{ marginBottom: "20px" }}>
           Time to the Big Day!
         </p>
         <div
-          className="flex box-border w-11/12 sm:w-full h-[100px] items-center justify-center text-2xl rounded-2xl"
+          className="flex box-border w-11/12 sm:w-full h-[100px] font-lora items-center justify-center text-2xl rounded-2xl"
           style={{
             // border: "5px solid",
             margin: "10px",

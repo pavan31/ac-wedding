@@ -16,7 +16,7 @@ export default function WatchLiveButton() {
       }}
     >
       <button
-        className="border-2 hover:text-white transition-colors font-semibold cursor-pointer shadow-lg"
+        className="border-2 hover:text-white font-lora transition-colors font-semibold cursor-pointer shadow-lg"
         style={{
           border: `2px solid ${theme.primary}`,
           borderRadius: "10px",

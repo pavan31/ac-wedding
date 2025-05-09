@@ -20,7 +20,7 @@ const Hero = () => {
       }}
     >
       <p
-        className="uppercase text-2xl sm:text-4xl"
+        className="uppercase text-2xl sm:text-4xl font-lora text-center"
         style={{ marginBottom: 30 }}
       >
         Welcome to our Wedding
@@ -46,7 +46,7 @@ const Hero = () => {
       </div>
 
       <Link
-        className="text-3xl rounded-xl flex items-center gap-2 backdrop-blur-sm cursor-pointer"
+        className="text-3xl rounded-xl flex items-center font-lora gap-2 backdrop-blur-sm cursor-pointer"
         style={{
           backgroundColor: theme.secondary,
           color: theme.color,

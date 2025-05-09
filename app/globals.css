@@ -8,6 +8,14 @@
   font-family: 'Great Vibes', cursive;
 }
 
+.font-dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-lora {
+  font-family: 'Lora', serif;
+}
+
 * {
   margin: 0;
   padding: 0;

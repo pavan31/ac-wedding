@@ -12,7 +12,7 @@ import React from "react";
 const page = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen box-border overflow-x-hidden"
+      className="flex flex-col items-center justify-center font-lora min-h-screen box-border overflow-x-hidden"
       style={{ padding: "20px" }}
     >
       <BackgroundMusic />

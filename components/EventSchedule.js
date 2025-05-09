@@ -6,13 +6,33 @@ import { motion } from "framer-motion";
 import { useTheme } from "@/theme/ThemeContext";
 
 const events = [
+  // {
+  //   icon: "🪔",
+  //   name: "Haldi Ceremony",
+  //   date: "15 May 2025",
+  //   time: "1:00 PM",
+  //   location: "Vasavi Kalyana mandapam, Narasaraopet",
+  //   dressCode: "Yellow & White",
+  // },
   {
     icon: "🪔",
     name: "Haldi Ceremony",
-    date: "15 May 2025",
-    time: "1:00 PM",
-    location: "Vasavi Kalyana mandapam, Narasaraopet",
-    dressCode: "Yellow & White",
+    subEvents: [
+      {
+        for: "Bride",
+        date: "15 May 2025",
+        time: "1:00 PM",
+        location: "Bride's Residence, Ipuru",
+        dressCode: "Yellow & White",
+      },
+      {
+        for: "Groom",
+        date: "15 May 2025",
+        time: "1:00 PM",
+        location: "Vasavi Kalyana mandapam, Narasaraopet",
+        dressCode: "Yellow & White",
+      },
+    ],
   },
   {
     icon: "🎶",
@@ -23,18 +43,19 @@ const events = [
     dressCode: "Ethnic with a Sparkle",
   },
   {
-    icon: "💍",
-    name: "Wedding",
+    icon: "🧎‍♂️",
+    name: "Upanayanam",
     date: "17th May 2025",
-    time: "9:00 PM",
+    time: "9:00 AM",
     location: "Groom's Home",
     dressCode: "Traditional",
   },
   {
-    icon: "🎉",
-    name: "Reception",
+    icon: "💍 + 🎉",
+    name: "Wedding & Reception",
     date: "17th May 2025",
-    time: "6:30 PM",
+    time: "6:30 PM onwards",
+    muhurtham: "1:40 AM (Early mornings of 18th May)",
     location: "Komala Conventions A/C, Narasaraopet",
     dressCode: "Formal/Western",
   },
@@ -83,13 +104,12 @@ export default function EventSchedule() {
             >
               {/* Default content */}
               <div
-                className={`flex flex-col justify-center items-center text-center h-full px-6 py-10 transition-opacity duration-300 ${
-                  isMobile
-                    ? isOpen
-                      ? "opacity-0"
-                      : "opacity-100"
-                    : "group-hover:opacity-0"
-                }`}
+                className={`flex flex-col justify-center items-center text-center h-full px-6 py-10 transition-opacity duration-300 ${isMobile
+                  ? isOpen
+                    ? "opacity-0"
+                    : "opacity-100"
+                  : "group-hover:opacity-0"
+                  }`}
               >
                 <div className="text-6xl" style={{ marginBottom: "20px" }}>
                   {event.icon}
@@ -101,16 +121,16 @@ export default function EventSchedule() {
 
               {/* Detailed content */}
               <div
-                className={`absolute inset-0 box-border flex flex-col justify-center items-center bg-black/70 backdrop-blur-sm text-white text-center transition-opacity duration-300 ${
-                  isMobile
-                    ? isOpen
-                      ? "opacity-100"
-                      : "opacity-0"
-                    : "opacity-0 group-hover:opacity-100"
-                }`}
+                className={`absolute inset-0 box-border flex flex-col justify-center items-center bg-black/70 backdrop-blur-sm text-white text-center transition-opacity duration-300 ${isMobile
+                  ? isOpen
+                    ? "opacity-100"
+                    : "opacity-0"
+                  : "opacity-0 group-hover:opacity-100"
+                  }`}
                 style={{
                   padding: "20px",
                 }}
+
               >
                 <p
                   className="text-4xl font-vibes"
@@ -118,22 +138,48 @@ export default function EventSchedule() {
                 >
                   {event.name}
                 </p>
-                <p
-                  className="text-xl sm:text-2xl"
-                  style={{ marginBottom: "10px" }}
-                >
-                  {event.date} • {event.time}
-                </p>
-                <p className="flex items-center justify-center text-xl sm:text-2xl mb-2">
-                  {event.location}
-                </p>
-                {event.dressCode && (
-                  <p
-                    className="text-xl sm:text-2xl"
-                    style={{ marginTop: "10px" }}
-                  >
-                    Dress Code: {event.dressCode}
-                  </p>
+
+                {event.subEvents ? (
+                  event.subEvents.map((subEvent, subIdx) => (
+                    <div key={subIdx} className="w-full border-t border-white/30 py-2">
+                      <p className="text-2xl font-lora font-semibold mb-1">{subEvent.for}</p>
+                      <p className="text-xl font-lora sm:text-2xl">{subEvent.date} • {subEvent.time}</p>
+                      <p className="text-xl font-lora sm:text-2xl">{subEvent.location}</p>
+                      <p className="text-xl font-lora sm:text-2xl " style={{ marginBottom: "10px" }}>
+                        Dress Code: {subEvent.dressCode}
+                      </p>
+                      {
+                        subIdx == 0 && (
+                          <div className="w-full border-amber-300" style={{
+                            borderTopWidth: "1px",
+                            height: "2px"
+                          }}></div>
+                        )
+                      }
+                    </div>
+                  ))
+                ) : (
+                  <>
+                    <p
+                      className="text-2xl sm:text-2xl font-lora"
+                      style={{ marginBottom: "10px" }}
+                    >
+                      {event.date} • {event.time}
+                    </p>
+                    <p className="flex items-center font-lora justify-center text-2xl sm:text-2xl mb-2">
+                      {event.location}
+                    </p>
+                    {event.muhurtham && (
+                      <p className="text-2xl sm:text-2xl font-lora" style={{ marginTop: "10px" }}>
+                        Muhurtham: {event.muhurtham}
+                      </p>
+                    )}
+                    {event.dressCode && (
+                      <p className="text-2xl sm:text-2xl font-lora" style={{ marginTop: "10px" }}>
+                        Dress Code: {event.dressCode}
+                      </p>
+                    )}
+                  </>
                 )}
               </div>
             </motion.div>

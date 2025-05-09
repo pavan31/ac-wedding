@@ -37,10 +37,10 @@ export default function CoupleDetails() {
           >
             Akhil
           </p>
-          <p className="text-2xl" style={{ marginBottom: "10px" }}>
+          <p className="text-2xl font-lora" style={{ marginBottom: "10px" }}>
             S/o
           </p>
-          <p className="text-2xl" style={{ marginBottom: "10px" }}>
+          <p className="text-2xl font-lora" style={{ marginBottom: "10px" }}>
             Mr. Kothamasu Srinivasarao & Mrs. Usharani
           </p>
         </motion.div>
@@ -63,10 +63,10 @@ export default function CoupleDetails() {
           >
             Chandana
           </p>
-          <p className="text-2xl" style={{ marginBottom: "10px" }}>
+          <p className="text-2xl font-lora" style={{ marginBottom: "10px" }}>
             D/o
           </p>
-          <p className="text-2xl" style={{ marginBottom: "10px" }}>
+          <p className="text-2xl font-lora" style={{ marginBottom: "10px" }}>
             Mr. Kotha Nageswararao & Mrs. Padmavathi
           </p>
         </motion.div>
