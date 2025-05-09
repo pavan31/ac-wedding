@@ -61,10 +61,11 @@ export default function InvitationSection() {
         <div
           className="flex box-border w-11/12 sm:w-full h-[100px] items-center justify-center text-2xl rounded-2xl"
           style={{
-            border: "5px solid",
+            // border: "5px solid",
             margin: "10px",
-            borderColor: theme.primary,
-            color: theme.primary,
+            backgroundColor: theme.primary,
+            // color: theme.primary,
+            color: theme.text,
           }}
         >
           {Object.entries(timeLeft).map(([unit, value]) => (

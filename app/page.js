@@ -10,7 +10,7 @@ export default function Home() {
       style={{
         backgroundColor: theme.background,
         color: theme.text,
-        height: "100vh",
+        height: "95vh",
         padding: "20px",
         boxSizing: "border-box",
       }}
