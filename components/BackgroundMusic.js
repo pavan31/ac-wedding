@@ -13,7 +13,8 @@ export default function BackgroundMusic() {
   // On mount, try to autoplay
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.play()
+      audioRef.current
+        .play()
         .then(() => setIsPlaying(true))
         .catch((err) => {
           console.warn("Autoplay failed:", err);
@@ -38,7 +39,7 @@ export default function BackgroundMusic() {
         onClick={toggleMusic}
         style={{
           padding: "8px",
-          background: theme.secondary,
+          background: theme.primary,
           color: theme.color,
           borderRadius: "50%",
           display: "flex",
@@ -48,11 +49,7 @@ export default function BackgroundMusic() {
       >
         {isPlaying ? <Pause size={20} /> : <Play size={20} />}
       </button>
-      <audio
-        ref={audioRef}
-        loop
-        autoPlay
-      >
+      <audio ref={audioRef} loop autoPlay>
         <source src="/music.mp3" type="audio/mpeg" />
         Your browser does not support the audio tag.
       </audio>

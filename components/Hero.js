@@ -48,7 +48,7 @@ const Hero = () => {
       <Link
         className="text-3xl rounded-full flex items-center gap-2 cursor-pointer"
         style={{
-          backgroundColor: theme.secondary,
+          backgroundColor: theme.primary,
           color: theme.color,
           padding: "16px 32px",
         }}
@@ -81,7 +81,7 @@ const Hero = () => {
                   <div
                     className="flex items-center justify-center w-12 h-12 sm:w-12 sm:h-12 rounded-xl shadow-lg"
                     style={{
-                      backgroundColor: theme.secondary,
+                      backgroundColor: theme.primary,
                       color: theme.color,
                     }}
                   >

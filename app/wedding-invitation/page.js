@@ -6,6 +6,7 @@ import Gallery from "@/components/Gallery";
 import InvitationSection from "@/components/InvitationSection";
 import LocationMap from "@/components/LocationMap";
 import ThemeToggle from "@/components/ThemeToggle";
+import WatchLiveButton from "@/components/WatchLiveButton";
 import React from "react";
 
 const page = () => {
@@ -19,11 +20,9 @@ const page = () => {
       <CoupleDetails />
       <EventSchedule />
       <Gallery />
-      <LocationMap />
       <ContactInfo />
-      <div className="absolute top-4 right-4">
-        <ThemeToggle />
-      </div>
+      <ThemeToggle />
+      <WatchLiveButton />
     </div>
   );
 };

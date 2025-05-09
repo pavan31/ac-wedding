@@ -11,7 +11,7 @@ export default function ThemeToggle() {
         onClick={toggleTheme}
         style={{
           padding: "8px",
-          background: theme.secondary,
+          background: theme.primary,
           color: theme.color,
           borderRadius: "50%",
           display: "flex",

@@ -10,7 +10,10 @@ export default function CoupleDetails() {
       className="box-border"
       style={{ padding: "20px", marginBottom: "100px" }}
     >
-      <p className="text-7xl sm:text-8xl font-vibes text-center" style={{ marginBottom: "100px", marginTop: "50px" }}>
+      <p
+        className="text-7xl sm:text-8xl font-vibes text-center"
+        style={{ marginBottom: "100px", marginTop: "50px" }}
+      >
         Meet the Couple
       </p>
 
@@ -29,8 +32,8 @@ export default function CoupleDetails() {
             style={{ marginBottom: 20, width: "250px", height: "250px" }}
           />
           <p
-            className="mt-4 text-9xl font-vibes"
-            style={{ marginBottom: "20px" }}
+            className="text-6xl sm:text-8xl font-vibes"
+            style={{ marginBottom: "20px", marginTop: "20px" }}
           >
             Chandana
           </p>
@@ -59,8 +62,8 @@ export default function CoupleDetails() {
             style={{ marginBottom: 20, width: "250px", height: "250px" }}
           />
           <p
-            className="mt-4 text-9xl font-vibes"
-            style={{ marginBottom: "20px" }}
+            className="text-6xl sm:text-8xl font-vibes"
+            style={{ marginBottom: "20px", marginTop: "20px" }}
           >
             Akhil
           </p>
