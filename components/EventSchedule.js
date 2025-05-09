@@ -43,7 +43,7 @@ const events = [
     dressCode: "Ethnic with a Sparkle",
   },
   {
-    icon: "🧎‍♂️",
+    icon: "👳🏻",
     name: "Upanayanam",
     date: "17th May 2025",
     time: "9:00 AM",
