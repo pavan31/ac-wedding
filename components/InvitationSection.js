@@ -38,8 +38,7 @@ export default function InvitationSection() {
   }, []);
 
   return (
-    <section className="relative px-4 py-24 text-center flex flex-col items-center justify-center min-h-[95vh]">
-      {/* Invitation Message */}
+    <section className="relative text-center flex flex-col items-center justify-center h-[95vh]">
       <p
         className="text-6xl md:text-8xl font-vibes"
         style={{ marginBottom: "50px" }}
