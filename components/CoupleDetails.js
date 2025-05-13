@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import hero from "../public/hero.jpeg";
+import hero from "../public/images/hero.jpeg";
+import heroine from "../public/images/heroine.jpeg";
 
 export default function CoupleDetails() {
   return (
@@ -29,7 +30,13 @@ export default function CoupleDetails() {
             src={hero}
             alt="Groom"
             className="object-cover rounded-full"
-            style={{ marginBottom: 20, width: "250px", height: "250px" }}
+            style={{
+              marginBottom: 20,
+              width: "250px",
+              height: "250px",
+              transform: "scaleX(-1)",
+              boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+            }}
           />
           <p
             className="text-6xl sm:text-8xl font-vibes"
@@ -52,10 +59,15 @@ export default function CoupleDetails() {
           className="flex flex-col items-center text-center max-w-xs"
         >
           <Image
-            src={hero}
+            src={heroine}
             alt="Bride"
             className="object-cover rounded-full"
-            style={{ marginBottom: 20, width: "250px", height: "250px" }}
+            style={{
+              marginBottom: 20,
+              width: "250px",
+              height: "250px",
+              boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+            }}
           />
           <p
             className="text-6xl sm:text-8xl font-vibes"

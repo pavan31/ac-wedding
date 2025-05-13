@@ -3,14 +3,12 @@ import { useTheme } from "@/theme/ThemeContext";
 import React from "react";
 import ThemeToggle from "./ThemeToggle";
 import { Mail } from "lucide-react";
-import Countdown from "react-countdown";
 import Image from "next/image";
-import hero from "../public/hero.jpeg";
+import main from "../public/images/main.jpeg";
 import Link from "next/link";
 
 const Hero = () => {
   const { theme } = useTheme();
-  const weddingDate = new Date("2025-05-17T00:00:00");
   return (
     <div
       className="text-center flex items-center justify-center w-full h-[100%] flex-col box-border"
@@ -26,14 +24,19 @@ const Hero = () => {
         Welcome to our Wedding
       </p>
       <Image
-        src={hero}
+        src={main}
         alt="couple"
         className="object-cover rounded-full"
-        style={{ marginBottom: 20, width: "250px", height: "250px" }}
+        style={{
+          marginBottom: 20,
+          width: "250px",
+          height: "250px",
+          transform: "scale(1.2)",
+        }}
       />
       <div
         className="flex flex-col sm:flex-row"
-        style={{ marginBottom: 15, marginTop: 15 }}
+        style={{ marginBottom: 15, marginTop: 40 }}
       >
         <p className="text-6xl sm:text-8xl font-vibes text-center">Akhil</p>
         <p
