@@ -6,21 +6,13 @@ import { motion } from "framer-motion";
 import { useTheme } from "@/theme/ThemeContext";
 
 const events = [
-  // {
-  //   icon: "🪔",
-  //   name: "Haldi Ceremony",
-  //   date: "15 May 2025",
-  //   time: "1:00 PM",
-  //   location: "Vasavi Kalyana mandapam, Narasaraopet",
-  //   dressCode: "Yellow & White",
-  // },
   {
     icon: "🪔",
     name: "Haldi Ceremony",
     subEvents: [
       {
         for: "Bride",
-        date: "15 May 2025",
+        date: "16 May 2025",
         time: "1:00 PM",
         location: "Bride's Residence, Ipuru",
         dressCode: "Yellow & White",

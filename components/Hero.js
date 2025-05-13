@@ -32,6 +32,8 @@ const Hero = () => {
           width: "250px",
           height: "250px",
           transform: "scale(1.2)",
+          boxShadow: "0 0 20px rgba(0,0,0, 0.5)",
+          marginTop: 20,
         }}
       />
       <div
