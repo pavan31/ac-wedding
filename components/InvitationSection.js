@@ -39,16 +39,9 @@ export default function InvitationSection() {
 
   return (
     <section
-      className="relative text-center  flex flex-col items-center justify-center min-h-[95vh] box-border"
+      className="relative text-center  flex flex-col items-center justify-center min-h-[90vh] box-border"
       style={{ padding: "20px" }}
     >
-      {/* Invitation Message */}
-      {/* <p
-        className="text-6xl md:text-8xl font-vibes"
-        style={{ marginBottom: "50px" }}
-      >
-        You&apos;re Invited!
-      </p> */}
       <p
         className="text-3xl w-9/10 sm:max-w-2xl mx-auto font-lora text-muted-foreground"
         style={{ marginBottom: "25px" }}
@@ -69,13 +62,6 @@ export default function InvitationSection() {
         We invite you to join us as we exchange vows and  happy to take
         blessings from you in our new Journey.
       </p>
-      {/* <p
-        className="text-xl w-9/10 sm:max-w-2xl mx-auto text-muted-foreground"
-        style={{ marginBottom: "25px" }}
-      >
-        Our day will be genuinely remarkable with your attendance.
-      </p> */}
-
       <p
         className="text-4xl md:text-4xl font-vibes"
         style={{ marginBottom: "50px" }}

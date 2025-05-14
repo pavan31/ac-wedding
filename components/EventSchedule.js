@@ -11,17 +11,17 @@ const events = [
     name: "Haldi Ceremony",
     subEvents: [
       {
-        for: "Bride",
-        date: "16 May 2025",
-        time: "1:00 PM",
-        location: "Bride's Residence, Ipuru",
-        dressCode: "Yellow & White",
-      },
-      {
         for: "Groom",
         date: "15 May 2025",
         time: "1:00 PM",
         location: "Vasavi Kalyana mandapam, Narasaraopet",
+        dressCode: "Yellow & White",
+      },
+      {
+        for: "Bride",
+        date: "16 May 2025",
+        time: "1:00 PM",
+        location: "Bride's Residence, Ipuru",
         dressCode: "Yellow & White",
       },
     ],
