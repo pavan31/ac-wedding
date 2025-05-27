@@ -25,7 +25,7 @@ export default function WatchLiveButton() {
         }}
         onClick={() => {
           window.open(
-            "https://www.youtube.com/live/w27th941q50?si=Zuj7FmZP04dOhVlS",
+            // "https://www.youtube.com/live/w27th941q50?si=Zuj7FmZP04dOhVlS",
             "_blank"
           );
         }}

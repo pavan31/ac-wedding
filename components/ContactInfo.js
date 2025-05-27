@@ -17,16 +17,16 @@ export default function ContactInfo() {
       >
         <p style={{ marginBottom: "20px" }}>
           👰 Bride&apos;s Side:
-          <span className=" text-2xl font-medium font-lora"> +91 9951737271</span>
+          <span className=" text-2xl font-medium font-lora"> +1 (234) 296-2485</span>
         </p>
         <p style={{ marginBottom: "20px" }}>
           🤵 Groom&apos;s Side:
-          <span className="text-2xl font-medium font-lora"> +91 8074897590</span>
+          <span className="text-2xl font-medium font-lora"> +1 (234) 296-2484</span>
         </p>
         <p style={{ marginBottom: "20px" }}>
           📍 Location Help:
           <a
-            href="https://maps.app.goo.gl/n7TYXM2gYoxYiqMu5"
+            href="https://g.co/kgs/iGQ5qHp"
             target="_blank"
             className="underline text-2xl text-blue-300 font-lora"
             style={{ paddingLeft: "5px", textDecoration: "underline" }}

@@ -1,13 +1,13 @@
 export const lightTheme = {
-  background: "#f8bbd0",
-  text: "#222222",
-  primary: "#76a0f1",
-  secondary: "#d81b60",
+  background: "#FFF7F0",   // Creamy peach
+  text: "#4A4A4A",         // Soft charcoal
+  primary: "#A78BFA",      // Gentle lavender purple
+  secondary: "#F8AFA6",    // Soft blush pink
 };
 
 export const darkTheme = {
-  background: "#183B4E",
-  text: "#e0e0e0",
-  primary: "#ff4081",
-  secondary: "#d81b60",
+  background: "#1E1B2E",   // Deep twilight purple
+  text: "#ECE6F0",         // Warm light lavender
+  primary: "#C4B5FD",      // Light lavender tint
+  secondary: "#F8B4B4",    // Muted rose
 };

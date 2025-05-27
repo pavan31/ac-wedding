@@ -15,7 +15,7 @@ export default function InvitationSection() {
   const { theme } = useTheme();
 
   useEffect(() => {
-    const weddingDate = new Date("2025-05-17T18:30:00");
+    const weddingDate = new Date("2025-06-05T18:30:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -66,7 +66,7 @@ export default function InvitationSection() {
         className="text-4xl md:text-4xl font-vibes"
         style={{ marginBottom: "50px" }}
       >
-        - Akhil and Chandana
+        - Mani and Divya
       </p>
 
       {/* Countdown Timer */}
@@ -81,7 +81,7 @@ export default function InvitationSection() {
             margin: "10px",
             backgroundColor: theme.primary,
             // color: theme.primary,
-            color: theme.text,
+            color: "#1e1b2e",
           }}
         >
           {Object.entries(timeLeft).map(([unit, value]) => (

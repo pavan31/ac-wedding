@@ -14,14 +14,14 @@ import img8 from "../public/images/8.jpeg";
 import img9 from "../public/images/9.jpeg";
 import img10 from "../public/images/10.jpeg";
 import img11 from "../public/images/11.jpeg";
-import img12 from "../public/images/12.jpeg";
-import img13 from "../public/images/13.jpeg";
-import img14 from "../public/images/14.jpeg";
-import img15 from "../public/images/15.jpeg";
-import img16 from "../public/images/16.jpeg";
-import img17 from "../public/images/17.jpeg";
-import img18 from "../public/images/18.jpeg";
-import img19 from "../public/images/19.jpeg";
+// import img12 from "../public/images/12.jpeg";
+// import img13 from "../public/images/13.jpeg";
+// import img14 from "../public/images/14.jpeg";
+// import img15 from "../public/images/15.jpeg";
+// import img16 from "../public/images/16.jpeg";
+// import img17 from "../public/images/17.jpeg";
+// import img18 from "../public/images/18.jpeg";
+// import img19 from "../public/images/19.jpeg";
 
 const images = [
   {
@@ -33,8 +33,16 @@ const images = [
     alt: "Image 2",
   },
   {
+    src: img3,
+    alt: "Image 3",
+  },
+  {
     src: img4,
     alt: "Image 4",
+  },
+  {
+    src: img5,
+    alt: "Image 5",
   },
   {
     src: img6,
@@ -60,34 +68,34 @@ const images = [
     src: img11,
     alt: "Image 11",
   },
-  {
-    src: img13,
-    alt: "Image 13",
-  },
-  {
-    src: img14,
-    alt: "Image 14",
-  },
-  {
-    src: img15,
-    alt: "Image 15",
-  },
-  {
-    src: img16,
-    alt: "Image 16",
-  },
-  {
-    src: img17,
-    alt: "Image 17",
-  },
-  {
-    src: img18,
-    alt: "Image 18",
-  },
-  {
-    src: img19,
-    alt: "Image 19",
-  },
+  // {
+  //   src: img13,
+  //   alt: "Image 13",
+  // },
+  // {
+  //   src: img14,
+  //   alt: "Image 14",
+  // },
+  // {
+  //   src: img15,
+  //   alt: "Image 15",
+  // },
+  // {
+  //   src: img16,
+  //   alt: "Image 16",
+  // },
+  // {
+  //   src: img17,
+  //   alt: "Image 17",
+  // },
+  // {
+  //   src: img18,
+  //   alt: "Image 18",
+  // },
+  // {
+  //   src: img19,
+  //   alt: "Image 19",
+  // },
 ];
 
 export default function ImageCarousel() {

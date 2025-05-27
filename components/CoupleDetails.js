@@ -42,13 +42,13 @@ export default function CoupleDetails() {
             className="text-6xl sm:text-8xl font-vibes"
             style={{ marginBottom: "20px", marginTop: "20px" }}
           >
-            Akhil
+            Mani
           </p>
           <p className="text-2xl font-lora" style={{ marginBottom: "10px" }}>
             S/o
           </p>
           <p className="text-2xl font-lora" style={{ marginBottom: "10px" }}>
-            Mr. Kothamasu Srinivasarao & Mrs. Usharani
+            Mr. Vallabhaneni Venkateswara Rao & Mrs. Vijayalakshmi
           </p>
         </motion.div>
         <div className="sm:block text-4xl font-bold font-vibes">&</div>
@@ -73,13 +73,13 @@ export default function CoupleDetails() {
             className="text-6xl sm:text-8xl font-vibes"
             style={{ marginBottom: "20px", marginTop: "20px" }}
           >
-            Chandana
+            Divya
           </p>
           <p className="text-2xl font-lora" style={{ marginBottom: "10px" }}>
             D/o
           </p>
           <p className="text-2xl font-lora" style={{ marginBottom: "10px" }}>
-            Mr. Kotha Nageswararao & Mrs. Padmavathi
+            Mr. Gunde Vara Prasad Rao & Mrs. Hepsi
           </p>
         </motion.div>
       </div>

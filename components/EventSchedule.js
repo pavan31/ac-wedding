@@ -6,49 +6,49 @@ import { motion } from "framer-motion";
 import { useTheme } from "@/theme/ThemeContext";
 
 const events = [
+  // {
+  //   icon: "🪔",
+  //   name: "Haldi Ceremony",
+  //   subEvents: [
+  //     {
+  //       for: "Groom",
+  //       date: "15 May 2025",
+  //       time: "1:00 PM",
+  //       location: "Vasavi Kalyana mandapam, Narasaraopet",
+  //       dressCode: "Yellow & White",
+  //     },
+  //     {
+  //       for: "Bride",
+  //       date: "16 May 2025",
+  //       time: "1:00 PM",
+  //       location: "Bride's Residence, Ipuru",
+  //       dressCode: "Yellow & White",
+  //     },
+  //   ],
+  // },
+  // {
+  //   icon: "🎶",
+  //   name: "Sangeet",
+  //   date: "15 May 2025",
+  //   time: "7:00 PM",
+  //   location: "Vasavi Kalyana mandapam, Narasaraopet",
+  //   dressCode: "Ethnic with a Sparkle",
+  // },
   {
-    icon: "🪔",
-    name: "Haldi Ceremony",
-    subEvents: [
-      {
-        for: "Groom",
-        date: "15 May 2025",
-        time: "1:00 PM",
-        location: "Vasavi Kalyana mandapam, Narasaraopet",
-        dressCode: "Yellow & White",
-      },
-      {
-        for: "Bride",
-        date: "16 May 2025",
-        time: "1:00 PM",
-        location: "Bride's Residence, Ipuru",
-        dressCode: "Yellow & White",
-      },
-    ],
-  },
-  {
-    icon: "🎶",
-    name: "Sangeet",
-    date: "15 May 2025",
-    time: "7:00 PM",
-    location: "Vasavi Kalyana mandapam, Narasaraopet",
-    dressCode: "Ethnic with a Sparkle",
-  },
-  {
-    icon: "👳🏻",
-    name: "Upanayanam",
-    date: "17th May 2025",
-    time: "9:00 AM",
-    location: "Groom's Home",
+    icon: "💍",
+    name: "Wedding",
+    date: "05th June 2025",
+    time: "8:11 AM",
+    location: "2940 jim johnson rd concord nc 28027.",
     dressCode: "Traditional",
   },
   {
-    icon: "💍 + 🎉",
-    name: "Wedding & Reception",
-    date: "17th May 2025",
-    time: "6:30 PM onwards",
-    muhurtham: "1:40 AM (Early mornings of 18th May)",
-    location: "Komala Conventions A/C, Narasaraopet",
+    icon: "🎉",
+    name: "Reception",
+    date: "05th June 2025",
+    time: "8:00 PM onwards",
+    // muhurtham: "1:40 AM (Early mornings of 18th May)",
+    location: "2940 jim johnson rd concord nc 28027.",
     dressCode: "Formal/Western",
   },
 ];
@@ -82,7 +82,7 @@ export default function EventSchedule() {
         Event Schedule
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4 w-full max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 px-4 w-full max-w-4xl mx-auto">
         {events.map((event, index) => {
           const isOpen = openIndex === index;
 
@@ -96,13 +96,12 @@ export default function EventSchedule() {
             >
               {/* Default content */}
               <div
-                className={`flex flex-col justify-center items-center text-center h-full px-6 py-10 transition-opacity duration-300 ${
-                  isMobile
-                    ? isOpen
-                      ? "opacity-0"
-                      : "opacity-100"
-                    : "group-hover:opacity-0"
-                }`}
+                className={`flex flex-col justify-center items-center text-center h-full px-6 py-10 transition-opacity duration-300 ${isMobile
+                  ? isOpen
+                    ? "opacity-0"
+                    : "opacity-100"
+                  : "group-hover:opacity-0"
+                  }`}
               >
                 <div className="text-6xl" style={{ marginBottom: "20px" }}>
                   {event.icon}
@@ -114,13 +113,12 @@ export default function EventSchedule() {
 
               {/* Detailed content */}
               <div
-                className={`absolute inset-0 box-border flex flex-col justify-center items-center bg-black/70 backdrop-blur-sm text-white text-center transition-opacity duration-300 ${
-                  isMobile
-                    ? isOpen
-                      ? "opacity-100"
-                      : "opacity-0"
-                    : "opacity-0 group-hover:opacity-100"
-                }`}
+                className={`absolute inset-0 box-border flex flex-col justify-center items-center bg-black/70 backdrop-blur-sm text-white text-center transition-opacity duration-300 ${isMobile
+                  ? isOpen
+                    ? "opacity-100"
+                    : "opacity-0"
+                  : "opacity-0 group-hover:opacity-100"
+                  }`}
                 style={{
                   padding: "20px",
                 }}

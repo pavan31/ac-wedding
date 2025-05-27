@@ -40,14 +40,14 @@ const Hero = () => {
         className="flex flex-col sm:flex-row"
         style={{ marginBottom: 15, marginTop: 40 }}
       >
-        <p className="text-6xl sm:text-8xl font-vibes text-center">Akhil</p>
+        <p className="text-6xl sm:text-8xl font-vibes text-center">Mani</p>
         <p
           className="text-6xl sm:text-8xl font-vibes text-center"
           style={{ margin: "0px 30px" }}
         >
           &
         </p>
-        <p className="text-6xl sm:text-8xl font-vibes text-center">Chandana</p>
+        <p className="text-6xl sm:text-8xl font-vibes text-center">Divya</p>
       </div>
 
       <Link
